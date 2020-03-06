@@ -27,6 +27,12 @@ class TabBarViewController: UITabBarController {
                 image: UIImage(named: "tab_home_inactive")!.withRenderingMode(.alwaysOriginal),
                 selectedImage: UIImage(named: "tab_home_active")!.withRenderingMode(.alwaysOriginal)
             ),
+            setViewControllerTabItem(
+                storyboardName: "Profile",
+                title: Localify.get("profile.title"),
+                image: UIImage(named: "tab_user_inactive")!.withRenderingMode(.alwaysOriginal),
+                selectedImage: UIImage(named: "tab_user_active")!.withRenderingMode(.alwaysOriginal)
+            ),
         ]
     }
     

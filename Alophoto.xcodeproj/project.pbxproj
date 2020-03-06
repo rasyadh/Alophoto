@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2431904A2412AB5600F20D2C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243190492412AB5600F20D2C /* ProfileViewController.swift */; };
 		2481D66F2412215300B3487E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D66E2412215300B3487E /* AppDelegate.swift */; };
 		2481D6762412215300B3487E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6742412215300B3487E /* Main.storyboard */; };
 		2481D6782412215800B3487E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6772412215800B3487E /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		243190492412AB5600F20D2C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2481D66B2412215300B3487E /* Alophoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alophoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2481D66E2412215300B3487E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2481D6752412215300B3487E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		243190482412AB3D00F20D2C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				243190492412AB5600F20D2C /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		2481D6622412215300B3487E = {
 			isa = PBXGroup;
 			children = (
@@ -176,10 +186,10 @@
 		2481D6872412629800B3487E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				2481D6792412215800B3487E /* LaunchScreen.storyboard */,
-				2481D6742412215300B3487E /* Main.storyboard */,
 				2481D6AB24126E7400B3487E /* Auth.storyboard */,
 				2481D6B524127D3A00B3487E /* Home.storyboard */,
+				2481D6792412215800B3487E /* LaunchScreen.storyboard */,
+				2481D6742412215300B3487E /* Main.storyboard */,
 				2481D6BA24127D4800B3487E /* Profile.storyboard */,
 			);
 			path = Storyboards;
@@ -199,6 +209,7 @@
 		2481D689241262AB00B3487E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				243190482412AB3D00F20D2C /* Profile */,
 				2481D6BD24127FF400B3487E /* Home */,
 				2481D6AC24126ECA00B3487E /* Auth */,
 				2481D6A52412689800B3487E /* ManagerViewController.swift */,
@@ -379,6 +390,7 @@
 				2481D694241264CE00B3487E /* UIColor+Extension.swift in Sources */,
 				2481D6A02412660F00B3487E /* Notify.swift in Sources */,
 				2481D69E241265FA00B3487E /* Localify.swift in Sources */,
+				2431904A2412AB5600F20D2C /* ProfileViewController.swift in Sources */,
 				2481D6B02412715600B3487E /* TabBarViewController.swift in Sources */,
 				2481D6962412650C00B3487E /* UITableView+Extension.swift in Sources */,
 			);

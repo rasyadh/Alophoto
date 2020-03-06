@@ -43,7 +43,11 @@ class Storify: NSObject {
     private func storeUserData(_ email: String) {
         let pref = UserDefaults.standard
         pref.set(true, forKey: Preferences.isLoggedIn)
-        pref.set(email, forKey: Preferences.userData)
+        let userData = [
+            "userId": Int.random(in: 0..<1000),
+            "email": email,
+            ] as [String : Any]
+        pref.set(userData, forKey: Preferences.userData)
     }
     
     private func removeData() {

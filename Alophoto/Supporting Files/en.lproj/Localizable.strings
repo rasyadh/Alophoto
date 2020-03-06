@@ -37,6 +37,7 @@
 // MARK: - Alertify
 "alertify.ok" = "OK";
 "alertify.cancel" = "Cancel";
+"alertify.logout" = "Are you sure you want to logout ?";
 
 // MARK: - Login Screen
 "login.field.email" = "Email";
