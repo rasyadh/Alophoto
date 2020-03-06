@@ -12,12 +12,13 @@ public class ManagerViewController: UIViewController {
     
     // MARK: - Variables
     // Storyboards variable
-    private var homeStoryboard: UIStoryboard?
+    private var authStoryboard: UIStoryboard?
     
     private var cachedViewController = [String: UIViewController]()
     private var activeViewControllerId = ""
     
     private let CHILD_KEY = 1000000
+    private let CHILD_LOGIN_KEY = "LoginViewController"
     private let CHILD_HOME_KEY = "HomeViewController"
     
     // Change status bar style to light
@@ -33,7 +34,8 @@ public class ManagerViewController: UIViewController {
         super.viewDidLoad()
         
         setNeedsStatusBarAppearanceUpdate()
-        showHomeScreen()
+        UserDefaults.standard.bool(forKey: Preferences.isLoggedIn) ?
+            showHomeScreen() : showLoginScreen(isFromLogout: false)
     }
     
     public override func didReceiveMemoryWarning() {
@@ -46,6 +48,11 @@ public class ManagerViewController: UIViewController {
         cachedViewController[activeViewControllerId] = activeViewController
     }
     
+    public func showLoginScreen(isFromLogout: Bool) {
+        if isFromLogout { cachedViewController.removeAll() }
+        displayContentViewController(CHILD_LOGIN_KEY)
+    }
+    
     public func showHomeScreen() {
         displayContentViewController(CHILD_HOME_KEY)
     }
@@ -54,11 +61,11 @@ public class ManagerViewController: UIViewController {
         var viewController: UIViewController?
         if let cachedViewController = cachedViewController[identifier] {
             viewController = cachedViewController
-        } else if identifier == CHILD_HOME_KEY {
-            if homeStoryboard == nil {
-                homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        } else if identifier == CHILD_LOGIN_KEY {
+            if authStoryboard == nil {
+                authStoryboard = UIStoryboard(name: "Auth", bundle: nil)
             }
-            viewController = homeStoryboard?.instantiateInitialViewController()
+            viewController = authStoryboard?.instantiateInitialViewController()
         } else if let vendorTabViewController = storyboard?.instantiateViewController(withIdentifier: identifier) {
             cachedViewController[identifier] = vendorTabViewController
             viewController = vendorTabViewController

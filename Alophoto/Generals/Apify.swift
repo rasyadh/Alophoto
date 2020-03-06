@@ -15,7 +15,7 @@ import SwiftyJSON
  RequestCode Identifier for each api endpoint.
  */
 enum RequestCode {
-    case get
+    case getPhotosCollection
 }
 
 /**
@@ -25,10 +25,10 @@ class Apify: NSObject {
     static let shared = Apify()
     var prevOperationData: [String: Any]?
     
-    fileprivate let API_BASE_URL = ""
-    fileprivate let API_KEY = ""
+    fileprivate let API_BASE_URL = "https://api.unsplash.com"
+    fileprivate let API_ACCESS_KEY = "7a65ee764ac36e69dd10a391c233cd6b41d2fd2bbbebc2d81e04f22a102b096c"
     
-    let API_GET = ""
+    let API_PHOTOS_COLLECTION = "/collections/featured"
     
     // MARK: - Basic Networking Functions
     
@@ -108,7 +108,7 @@ class Apify: NSObject {
     private func handleResponseByRequestCode(_ response: DataResponse<Any>, _ responseJSON: JSON, _ code: RequestCode) -> [String: Any]? {
         var addData: [String: Any]?
         switch code {
-        case .get:
+        case .getPhotosCollection:
             addData = response.data == nil ? nil : ["json": responseJSON["results"]]
             if responseJSON["page"].exists() && responseJSON["total_pages"].exists() && responseJSON["total_results"].exists() {
                 let meta = [
@@ -157,20 +157,20 @@ class Apify: NSObject {
         }
         
         switch requestCode {
-        case .get:
-            if success { Storify.shared.store(dict["json"] as! JSON, dict["meta"] as! JSON) }
-            else { Notify.post(name: NotifName.get, sender: self, userInfo: dict) }
+        case .getPhotosCollection:
+            if success { Storify.shared.storePhotosCollection(dict["json"] as! JSON, dict["meta"] as! JSON) }
+            else { Notify.post(name: NotifName.getPhotosCollection, sender: self, userInfo: dict) }
         }
     }
     
-    func get(page: Int = 1) {
-        let URL = API_BASE_URL + API_GET
+    func getPhotosCollection(page: Int = 1) {
+        let URL = API_BASE_URL + API_PHOTOS_COLLECTION
         
         request(
             URL,
             method: .get,
             parameters: nil,
             headers: getHeaders(),
-            code: .get)
+            code: .getPhotosCollection)
     }
 }
