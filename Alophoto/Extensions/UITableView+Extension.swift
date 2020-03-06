@@ -1,0 +1,27 @@
+//
+//  UITableView+Extension.swift
+//  Alophoto
+//
+//  Created by Rasyadh Abdul Aziz on 06/03/20.
+//  Copyright © 2020 rasyadh. All rights reserved.
+//
+
+import UIKit
+
+extension UITableView {
+    func setEmptyView(title: String) {
+        self.register(UINib(nibName: "EmptyTableViewCell", bundle: nil), forCellReuseIdentifier: "emptyCell")
+        
+        // let cell = self.dequeueReusableCell(withIdentifier: "emptyCell") as! EmptyTableViewCell
+        let cell = self.dequeueReusableCell(withIdentifier: "emptyCell")
+        
+        // cell.titleLabel.text = title
+        // self.backgroundView = cell.contentView
+        self.separatorStyle = .none
+    }
+    
+    func restore(style: UITableViewCell.SeparatorStyle) {
+        self.backgroundView = nil
+        self.separatorStyle = style
+    }
+}

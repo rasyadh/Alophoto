@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2481D66F2412215300B3487E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D66E2412215300B3487E /* AppDelegate.swift */; };
+		2481D6732412215300B3487E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6722412215300B3487E /* ViewController.swift */; };
+		2481D6762412215300B3487E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6742412215300B3487E /* Main.storyboard */; };
+		2481D6782412215800B3487E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6772412215800B3487E /* Assets.xcassets */; };
+		2481D67B2412215800B3487E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6792412215800B3487E /* LaunchScreen.storyboard */; };
+		2481D68C2412630D00B3487E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2481D68E2412630D00B3487E /* Localizable.strings */; };
+		2481D6902412640100B3487E /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D68F2412640100B3487E /* Formatter+Extension.swift */; };
+		2481D6922412649600B3487E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6912412649600B3487E /* String+Extension.swift */; };
+		2481D694241264CE00B3487E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D693241264CE00B3487E /* UIColor+Extension.swift */; };
+		2481D6962412650C00B3487E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6952412650C00B3487E /* UITableView+Extension.swift */; };
+		2481D6982412653100B3487E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6972412653100B3487E /* UIView+Extension.swift */; };
+		2481D69A2412655700B3487E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6992412655700B3487E /* UIViewController+Extension.swift */; };
+		2481D69C2412657D00B3487E /* Alertify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D69B2412657D00B3487E /* Alertify.swift */; };
+		2481D69E241265FA00B3487E /* Localify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D69D241265FA00B3487E /* Localify.swift */; };
+		2481D6A02412660F00B3487E /* Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D69F2412660F00B3487E /* Notify.swift */; };
+		2481D6A22412662600B3487E /* Storify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6A12412662600B3487E /* Storify.swift */; };
+		2481D6A42412663D00B3487E /* Apify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6A32412663D00B3487E /* Apify.swift */; };
+		2481D6A62412689800B3487E /* ManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6A52412689800B3487E /* ManagerViewController.swift */; };
+		85C97F29528A82B07DCB93CF /* Pods_Alophoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD916359CC06F1CFB192BB8 /* Pods_Alophoto.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2481D66B2412215300B3487E /* Alophoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alophoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2481D66E2412215300B3487E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2481D6722412215300B3487E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2481D6752412215300B3487E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2481D6772412215800B3487E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2481D67A2412215800B3487E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2481D67C2412215800B3487E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2481D68D2412630D00B3487E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2481D68F2412640100B3487E /* Formatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatter+Extension.swift"; sourceTree = "<group>"; };
+		2481D6912412649600B3487E /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		2481D693241264CE00B3487E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2481D6952412650C00B3487E /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		2481D6972412653100B3487E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2481D6992412655700B3487E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2481D69B2412657D00B3487E /* Alertify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertify.swift; sourceTree = "<group>"; };
+		2481D69D241265FA00B3487E /* Localify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localify.swift; sourceTree = "<group>"; };
+		2481D69F2412660F00B3487E /* Notify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notify.swift; sourceTree = "<group>"; };
+		2481D6A12412662600B3487E /* Storify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storify.swift; sourceTree = "<group>"; };
+		2481D6A32412663D00B3487E /* Apify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apify.swift; sourceTree = "<group>"; };
+		2481D6A52412689800B3487E /* ManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerViewController.swift; sourceTree = "<group>"; };
+		74546C518AB3DA7270C35BC2 /* Pods-Alophoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alophoto.debug.xcconfig"; path = "Target Support Files/Pods-Alophoto/Pods-Alophoto.debug.xcconfig"; sourceTree = "<group>"; };
+		CFD916359CC06F1CFB192BB8 /* Pods_Alophoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alophoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D953E8A321507AE63FAAC874 /* Pods-Alophoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alophoto.release.xcconfig"; path = "Target Support Files/Pods-Alophoto/Pods-Alophoto.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2481D6682412215300B3487E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C97F29528A82B07DCB93CF /* Pods_Alophoto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2481D6622412215300B3487E = {
+			isa = PBXGroup;
+			children = (
+				2481D66D2412215300B3487E /* Alophoto */,
+				2481D66C2412215300B3487E /* Products */,
+				5CCEA62C4943D14C4D116D24 /* Pods */,
+				6CE330A23A057F2675158003 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2481D66C2412215300B3487E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2481D66B2412215300B3487E /* Alophoto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2481D66D2412215300B3487E /* Alophoto */ = {
+			isa = PBXGroup;
+			children = (
+				2481D66E2412215300B3487E /* AppDelegate.swift */,
+				2481D6862412626400B3487E /* Extensions */,
+				2481D6852412625F00B3487E /* Generals */,
+				2481D6842412625900B3487E /* Models */,
+				2481D683241221AD00B3487E /* Views */,
+				2481D6822412219E00B3487E /* Supporting Files */,
+			);
+			path = Alophoto;
+			sourceTree = "<group>";
+		};
+		2481D6822412219E00B3487E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2481D6772412215800B3487E /* Assets.xcassets */,
+				2481D67C2412215800B3487E /* Info.plist */,
+				2481D68E2412630D00B3487E /* Localizable.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2481D683241221AD00B3487E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2481D6872412629800B3487E /* Storyboards */,
+				2481D689241262AB00B3487E /* View Controllers */,
+				2481D688241262A200B3487E /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2481D6842412625900B3487E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2481D6852412625F00B3487E /* Generals */ = {
+			isa = PBXGroup;
+			children = (
+				2481D69B2412657D00B3487E /* Alertify.swift */,
+				2481D6A32412663D00B3487E /* Apify.swift */,
+				2481D69D241265FA00B3487E /* Localify.swift */,
+				2481D69F2412660F00B3487E /* Notify.swift */,
+				2481D6A12412662600B3487E /* Storify.swift */,
+			);
+			path = Generals;
+			sourceTree = "<group>";
+		};
+		2481D6862412626400B3487E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2481D68F2412640100B3487E /* Formatter+Extension.swift */,
+				2481D6912412649600B3487E /* String+Extension.swift */,
+				2481D693241264CE00B3487E /* UIColor+Extension.swift */,
+				2481D6952412650C00B3487E /* UITableView+Extension.swift */,
+				2481D6972412653100B3487E /* UIView+Extension.swift */,
+				2481D6992412655700B3487E /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2481D6872412629800B3487E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2481D6792412215800B3487E /* LaunchScreen.storyboard */,
+				2481D6742412215300B3487E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2481D688241262A200B3487E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2481D689241262AB00B3487E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2481D6722412215300B3487E /* ViewController.swift */,
+				2481D6A52412689800B3487E /* ManagerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5CCEA62C4943D14C4D116D24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74546C518AB3DA7270C35BC2 /* Pods-Alophoto.debug.xcconfig */,
+				D953E8A321507AE63FAAC874 /* Pods-Alophoto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6CE330A23A057F2675158003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFD916359CC06F1CFB192BB8 /* Pods_Alophoto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2481D66A2412215300B3487E /* Alophoto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2481D67F2412215800B3487E /* Build configuration list for PBXNativeTarget "Alophoto" */;
+			buildPhases = (
+				610CECFC3EEFC3BA73A41CAC /* [CP] Check Pods Manifest.lock */,
+				2481D6672412215300B3487E /* Sources */,
+				2481D6682412215300B3487E /* Frameworks */,
+				2481D6692412215300B3487E /* Resources */,
+				6888C3340AD46A56F261081C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alophoto;
+			productName = Alophoto;
+			productReference = 2481D66B2412215300B3487E /* Alophoto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2481D6632412215300B3487E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = rasyadh;
+				TargetAttributes = {
+					2481D66A2412215300B3487E = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 2481D6662412215300B3487E /* Build configuration list for PBXProject "Alophoto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2481D6622412215300B3487E;
+			productRefGroup = 2481D66C2412215300B3487E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2481D66A2412215300B3487E /* Alophoto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2481D6692412215300B3487E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2481D67B2412215800B3487E /* LaunchScreen.storyboard in Resources */,
+				2481D68C2412630D00B3487E /* Localizable.strings in Resources */,
+				2481D6782412215800B3487E /* Assets.xcassets in Resources */,
+				2481D6762412215300B3487E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		610CECFC3EEFC3BA73A41CAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alophoto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6888C3340AD46A56F261081C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alophoto/Pods-Alophoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alophoto/Pods-Alophoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alophoto/Pods-Alophoto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2481D6672412215300B3487E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2481D6A22412662600B3487E /* Storify.swift in Sources */,
+				2481D69A2412655700B3487E /* UIViewController+Extension.swift in Sources */,
+				2481D6A42412663D00B3487E /* Apify.swift in Sources */,
+				2481D6922412649600B3487E /* String+Extension.swift in Sources */,
+				2481D6982412653100B3487E /* UIView+Extension.swift in Sources */,
+				2481D6732412215300B3487E /* ViewController.swift in Sources */,
+				2481D6A62412689800B3487E /* ManagerViewController.swift in Sources */,
+				2481D69C2412657D00B3487E /* Alertify.swift in Sources */,
+				2481D6902412640100B3487E /* Formatter+Extension.swift in Sources */,
+				2481D66F2412215300B3487E /* AppDelegate.swift in Sources */,
+				2481D694241264CE00B3487E /* UIColor+Extension.swift in Sources */,
+				2481D6A02412660F00B3487E /* Notify.swift in Sources */,
+				2481D69E241265FA00B3487E /* Localify.swift in Sources */,
+				2481D6962412650C00B3487E /* UITableView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2481D6742412215300B3487E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2481D6752412215300B3487E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2481D6792412215800B3487E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2481D67A2412215800B3487E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2481D68E2412630D00B3487E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2481D68D2412630D00B3487E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2481D67D2412215800B3487E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2481D67E2412215800B3487E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2481D6802412215800B3487E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74546C518AB3DA7270C35BC2 /* Pods-Alophoto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSQS33Z9P9;
+				INFOPLIST_FILE = "$(SRCROOT)/Alophoto/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rasyadh.Alophoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2481D6812412215800B3487E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D953E8A321507AE63FAAC874 /* Pods-Alophoto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSQS33Z9P9;
+				INFOPLIST_FILE = "$(SRCROOT)/Alophoto/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rasyadh.Alophoto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2481D6662412215300B3487E /* Build configuration list for PBXProject "Alophoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2481D67D2412215800B3487E /* Debug */,
+				2481D67E2412215800B3487E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2481D67F2412215800B3487E /* Build configuration list for PBXNativeTarget "Alophoto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2481D6802412215800B3487E /* Debug */,
+				2481D6812412215800B3487E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2481D6632412215300B3487E /* Project object */;
+}
