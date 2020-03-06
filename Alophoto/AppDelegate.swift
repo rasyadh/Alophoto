@@ -28,6 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configureThirdPartyServices(application, launchOptions)
         configureAppEnvironment()
         
+        #if DEBUG
+        if CommandLine.arguments.contains("--uitesting") {
+            let defaultsName = Bundle.main.bundleIdentifier!
+            UserDefaults.standard.removePersistentDomain(forName: defaultsName)
+        }
+        #endif
+        
         return true
     }
     
