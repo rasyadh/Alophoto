@@ -43,6 +43,9 @@
 "login.field.password" = "Password";
 "login.button.login" = "Login";
 
+// MARK: - Home Screen
+"home.title" = "Home";
+
 // MARK: - Profile Screen
 "profile.title" = "Profile";
 "profile.button.logout" = "Logout";

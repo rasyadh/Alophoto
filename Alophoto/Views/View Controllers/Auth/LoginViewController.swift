@@ -52,12 +52,13 @@ class LoginViewController: UIViewController {
             Storify.shared.handleSuccessfullLogin(email: emailField.text!)
             
             SVProgressHUD.showSuccess(withStatus: Localify.get("messages.success.login"))
-            SVProgressHUD.dismiss(withDelay: 0.75) {
-                // self.managerViewController?.showHomeScreen()
+            SVProgressHUD.dismiss(withDelay: 1.0) {
+                 self.managerViewController?.showHomeScreen()
             }
             self.view.endEditing(true)
+        } else {
+            SVProgressHUD.dismiss()
         }
-        SVProgressHUD.dismiss()
     }
     
     private func validateField() -> Bool {

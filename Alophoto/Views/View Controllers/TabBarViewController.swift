@@ -21,11 +21,12 @@ class TabBarViewController: UITabBarController {
             [NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
         
         self.viewControllers = [
-//            setViewControllerTabItem(
-//                storyboardName: "Home",
-//                title: Localify.get("tab.chats"),
-//                image: UIImage(named: "iconChatLine")!.withRenderingMode(.alwaysOriginal),
-//                selectedImage: UIImage(named: "iconChat")!),
+            setViewControllerTabItem(
+                storyboardName: "Home",
+                title: Localify.get("home.title"),
+                image: UIImage(named: "tab_home_inactive")!.withRenderingMode(.alwaysOriginal),
+                selectedImage: UIImage(named: "tab_home_active")!.withRenderingMode(.alwaysOriginal)
+            ),
         ]
     }
     

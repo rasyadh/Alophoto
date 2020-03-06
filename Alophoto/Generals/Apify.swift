@@ -47,6 +47,8 @@ class Apify: NSObject {
         if accept == nil { headers["Accept"] = "application/json" }
         else { headers["Accept"] = accept }
         
+        headers["Accept-Version"] = "v1"
+        
         return headers
     }
     
@@ -72,7 +74,7 @@ class Apify: NSObject {
                     
                     // URL parsing or pre-delivery functions goes here
                     let responseJSON = try! JSON(data: response.data!)
-                    let addData: [String: Any]? = self.handleResponseByRequestCode(response, responseJSON, code)
+                    let addData: [String: Any]?  = response.data == nil ? nil : ["json": responseJSON]
                     self.consolidation(code, success: true, additionalData: addData)
                 case .failure:
                     // Request error parsing
@@ -98,32 +100,6 @@ class Apify: NSObject {
     }
     
     /**
-     Handle parsing response JSON based on RequestCode.
-     - Parameters:
-     - requestCode: RequestCode identifier
-     - response: response network call
-     - responseJSON: JSON Data response
-     - Returns: JSON Data
-     */
-    private func handleResponseByRequestCode(_ response: DataResponse<Any>, _ responseJSON: JSON, _ code: RequestCode) -> [String: Any]? {
-        var addData: [String: Any]?
-        switch code {
-        case .getPhotosCollection:
-            addData = response.data == nil ? nil : ["json": responseJSON["results"]]
-            if responseJSON["page"].exists() && responseJSON["total_pages"].exists() && responseJSON["total_results"].exists() {
-                let meta = [
-                    "page": responseJSON["page"],
-                    "total_pages": responseJSON["total_pages"],
-                    "total_results": responseJSON["total_results"],
-                ]
-                addData!["meta"] = JSON(meta)
-            }
-            break
-        }
-        return addData
-    }
-    
-    /**
      Handle parsing response JSON to standard format.
      - Parameters:
      - requestCode: RequestCode identifier
@@ -141,6 +117,10 @@ class Apify: NSObject {
             
             if !success && dict["json"] != nil {
                 if let json = dict["json"] as? JSON {
+                    if let errors = json["errors"].array {
+                        dict["errors"] = errors.map { $0.stringValue }
+                    }
+                    
                     if let error = json["error"].string {
                         dict["error"] = error
                     }
@@ -158,13 +138,13 @@ class Apify: NSObject {
         
         switch requestCode {
         case .getPhotosCollection:
-            if success { Storify.shared.storePhotosCollection(dict["json"] as! JSON, dict["meta"] as! JSON) }
+            if success { Storify.shared.storePhotosCollection(dict["json"] as! JSON) }
             else { Notify.post(name: NotifName.getPhotosCollection, sender: self, userInfo: dict) }
         }
     }
     
     func getPhotosCollection(page: Int = 1) {
-        let URL = API_BASE_URL + API_PHOTOS_COLLECTION
+        let URL = API_BASE_URL + API_PHOTOS_COLLECTION + "?client_id=\(API_ACCESS_KEY)"
         
         request(
             URL,

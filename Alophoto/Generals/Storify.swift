@@ -26,6 +26,8 @@ class Storify: NSObject {
     // Paging
     var page = [String: JSON]()
     
+    var photos = [Photo]()
+    
     // MARK: Authentications
     func handleSuccessfullLogin(email: String) {
         storeUserData(email)
@@ -40,16 +42,16 @@ class Storify: NSObject {
     
     private func storeUserData(_ email: String) {
         let pref = UserDefaults.standard
-        pref.set(false, forKey: Preferences.isLoggedIn)
+        pref.set(true, forKey: Preferences.isLoggedIn)
         pref.set(email, forKey: Preferences.userData)
     }
     
     private func removeData() {
-        
+        photos.removeAll()
     }
     
-    func storePhotosCollection(_ data: JSON, _ meta: JSON) {
-        page["photosCollection"] = meta
+    func storePhotosCollection(_ data: JSON) {
+        photos = data.arrayValue.map { Photo($0) }
         Notify.post(name: NotifName.getPhotosCollection, sender: self, userInfo: ["success": true])
     }
 }
