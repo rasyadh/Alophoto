@@ -12,7 +12,7 @@ import UIKit
  Notification Center Identifiers.
  */
 struct NotifName {
-    static let get = Notification.Name("get")
+    static let getPhotosCollection = Notification.Name("getPhotosCollection")
 }
 
 /**

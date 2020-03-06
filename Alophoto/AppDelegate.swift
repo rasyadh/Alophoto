@@ -8,6 +8,8 @@
 
 import UIKit
 import SVProgressHUD
+import IQKeyboardManagerSwift
+import Lightbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +27,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Config App & Environment
         configureThirdPartyServices(application, launchOptions)
         configureAppEnvironment()
+        
+        #if DEBUG
+        if CommandLine.arguments.contains("--uitesting") {
+            let defaultsName = Bundle.main.bundleIdentifier!
+            UserDefaults.standard.removePersistentDomain(forName: defaultsName)
+        }
+        #endif
         
         return true
     }
@@ -57,6 +66,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // SVProgessHUD Setup
         SVProgressHUD.setDefaultStyle(.light)
         SVProgressHUD.setDefaultMaskType(.clear)
+        
+        // IQKeyboardManager Setup
+        IQKeyboardManager.shared.enable = true
+        
+        // Lightbox Config
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = .center
+        LightboxConfig.InfoLabel.textAttributes = [NSAttributedString.Key.paragraphStyle: paragraph]
     }
     
     // Localization, check device default language

@@ -12,11 +12,10 @@ extension UITableView {
     func setEmptyView(title: String) {
         self.register(UINib(nibName: "EmptyTableViewCell", bundle: nil), forCellReuseIdentifier: "emptyCell")
         
-        // let cell = self.dequeueReusableCell(withIdentifier: "emptyCell") as! EmptyTableViewCell
-        let cell = self.dequeueReusableCell(withIdentifier: "emptyCell")
+        let cell = self.dequeueReusableCell(withIdentifier: "emptyCell") as! EmptyTableViewCell
         
-        // cell.titleLabel.text = title
-        // self.backgroundView = cell.contentView
+        cell.titleLabel.text = title
+        self.backgroundView = cell.contentView
         self.separatorStyle = .none
     }
     

@@ -11,5 +11,6 @@ target 'Alophoto' do
   pod 'Kingfisher'
   pod 'Lightbox'
   pod 'SVProgressHUD'
+  pod 'IQKeyboardManagerSwift'
 
 end

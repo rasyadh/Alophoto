@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2431904A2412AB5600F20D2C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243190492412AB5600F20D2C /* ProfileViewController.swift */; };
+		243190522412B69200F20D2C /* AlophotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243190512412B69200F20D2C /* AlophotoUITests.swift */; };
+		2431905A2412B71300F20D2C /* XCUIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243190592412B71300F20D2C /* XCUIApplication+Extension.swift */; };
+		2431905B2412B73300F20D2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2481D68E2412630D00B3487E /* Localizable.strings */; };
+		2431905C2412BBEA00F20D2C /* Localify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D69D241265FA00B3487E /* Localify.swift */; };
 		2481D66F2412215300B3487E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D66E2412215300B3487E /* AppDelegate.swift */; };
-		2481D6732412215300B3487E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6722412215300B3487E /* ViewController.swift */; };
 		2481D6762412215300B3487E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6742412215300B3487E /* Main.storyboard */; };
 		2481D6782412215800B3487E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6772412215800B3487E /* Assets.xcassets */; };
 		2481D67B2412215800B3487E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6792412215800B3487E /* LaunchScreen.storyboard */; };
@@ -25,13 +29,39 @@
 		2481D6A22412662600B3487E /* Storify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6A12412662600B3487E /* Storify.swift */; };
 		2481D6A42412663D00B3487E /* Apify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6A32412663D00B3487E /* Apify.swift */; };
 		2481D6A62412689800B3487E /* ManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6A52412689800B3487E /* ManagerViewController.swift */; };
+		2481D6A924126E7400B3487E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6AB24126E7400B3487E /* Auth.storyboard */; };
+		2481D6AE24126ED800B3487E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6AD24126ED800B3487E /* LoginViewController.swift */; };
+		2481D6B02412715600B3487E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6AF2412715600B3487E /* TabBarViewController.swift */; };
+		2481D6B324127D3A00B3487E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6B524127D3A00B3487E /* Home.storyboard */; };
+		2481D6B824127D4800B3487E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6BA24127D4800B3487E /* Profile.storyboard */; };
+		2481D6BC24127F1F00B3487E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6BB24127F1F00B3487E /* UITextField+Extension.swift */; };
+		2481D6BF2412800B00B3487E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6BE2412800B00B3487E /* HomeViewController.swift */; };
+		2481D6C22412864900B3487E /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6C02412864900B3487E /* EmptyTableViewCell.swift */; };
+		2481D6C32412864900B3487E /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6C12412864900B3487E /* EmptyTableViewCell.xib */; };
+		2481D6C62412872000B3487E /* PhotoCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6C42412872000B3487E /* PhotoCardTableViewCell.swift */; };
+		2481D6C72412872000B3487E /* PhotoCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2481D6C52412872000B3487E /* PhotoCardTableViewCell.xib */; };
+		2481D6C924128AD400B3487E /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481D6C824128AD400B3487E /* Photo.swift */; };
 		85C97F29528A82B07DCB93CF /* Pods_Alophoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD916359CC06F1CFB192BB8 /* Pods_Alophoto.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		243190542412B69200F20D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2481D6632412215300B3487E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2481D66A2412215300B3487E;
+			remoteInfo = Alophoto;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		243190492412AB5600F20D2C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2431904F2412B69200F20D2C /* AlophotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlophotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		243190512412B69200F20D2C /* AlophotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlophotoUITests.swift; sourceTree = "<group>"; };
+		243190532412B69200F20D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243190592412B71300F20D2C /* XCUIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Extension.swift"; sourceTree = "<group>"; };
 		2481D66B2412215300B3487E /* Alophoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alophoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2481D66E2412215300B3487E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2481D6722412215300B3487E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2481D6752412215300B3487E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2481D6772412215800B3487E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2481D67A2412215800B3487E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,12 +79,31 @@
 		2481D6A12412662600B3487E /* Storify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storify.swift; sourceTree = "<group>"; };
 		2481D6A32412663D00B3487E /* Apify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apify.swift; sourceTree = "<group>"; };
 		2481D6A52412689800B3487E /* ManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerViewController.swift; sourceTree = "<group>"; };
+		2481D6AA24126E7400B3487E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Auth.storyboard; sourceTree = "<group>"; };
+		2481D6AD24126ED800B3487E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2481D6AF2412715600B3487E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		2481D6B424127D3A00B3487E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		2481D6B924127D4800B3487E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		2481D6BB24127F1F00B3487E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		2481D6BE2412800B00B3487E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2481D6C02412864900B3487E /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		2481D6C12412864900B3487E /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		2481D6C42412872000B3487E /* PhotoCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCardTableViewCell.swift; sourceTree = "<group>"; };
+		2481D6C52412872000B3487E /* PhotoCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCardTableViewCell.xib; sourceTree = "<group>"; };
+		2481D6C824128AD400B3487E /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		74546C518AB3DA7270C35BC2 /* Pods-Alophoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alophoto.debug.xcconfig"; path = "Target Support Files/Pods-Alophoto/Pods-Alophoto.debug.xcconfig"; sourceTree = "<group>"; };
 		CFD916359CC06F1CFB192BB8 /* Pods_Alophoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alophoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D953E8A321507AE63FAAC874 /* Pods-Alophoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alophoto.release.xcconfig"; path = "Target Support Files/Pods-Alophoto/Pods-Alophoto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2431904C2412B69200F20D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2481D6682412215300B3487E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,10 +115,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		243190482412AB3D00F20D2C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				243190492412AB5600F20D2C /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		243190502412B69200F20D2C /* AlophotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				243190512412B69200F20D2C /* AlophotoUITests.swift */,
+				243190532412B69200F20D2C /* Info.plist */,
+				243190592412B71300F20D2C /* XCUIApplication+Extension.swift */,
+			);
+			path = AlophotoUITests;
+			sourceTree = "<group>";
+		};
 		2481D6622412215300B3487E = {
 			isa = PBXGroup;
 			children = (
 				2481D66D2412215300B3487E /* Alophoto */,
+				243190502412B69200F20D2C /* AlophotoUITests */,
 				2481D66C2412215300B3487E /* Products */,
 				5CCEA62C4943D14C4D116D24 /* Pods */,
 				6CE330A23A057F2675158003 /* Frameworks */,
@@ -80,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				2481D66B2412215300B3487E /* Alophoto.app */,
+				2431904F2412B69200F20D2C /* AlophotoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +189,7 @@
 		2481D6842412625900B3487E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2481D6C824128AD400B3487E /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +213,7 @@
 				2481D6912412649600B3487E /* String+Extension.swift */,
 				2481D693241264CE00B3487E /* UIColor+Extension.swift */,
 				2481D6952412650C00B3487E /* UITableView+Extension.swift */,
+				2481D6BB24127F1F00B3487E /* UITextField+Extension.swift */,
 				2481D6972412653100B3487E /* UIView+Extension.swift */,
 				2481D6992412655700B3487E /* UIViewController+Extension.swift */,
 			);
@@ -152,8 +223,11 @@
 		2481D6872412629800B3487E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				2481D6AB24126E7400B3487E /* Auth.storyboard */,
+				2481D6B524127D3A00B3487E /* Home.storyboard */,
 				2481D6792412215800B3487E /* LaunchScreen.storyboard */,
 				2481D6742412215300B3487E /* Main.storyboard */,
+				2481D6BA24127D4800B3487E /* Profile.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -161,6 +235,10 @@
 		2481D688241262A200B3487E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2481D6C02412864900B3487E /* EmptyTableViewCell.swift */,
+				2481D6C12412864900B3487E /* EmptyTableViewCell.xib */,
+				2481D6C42412872000B3487E /* PhotoCardTableViewCell.swift */,
+				2481D6C52412872000B3487E /* PhotoCardTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -168,10 +246,29 @@
 		2481D689241262AB00B3487E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2481D6722412215300B3487E /* ViewController.swift */,
+				243190482412AB3D00F20D2C /* Profile */,
+				2481D6BD24127FF400B3487E /* Home */,
+				2481D6AC24126ECA00B3487E /* Auth */,
 				2481D6A52412689800B3487E /* ManagerViewController.swift */,
+				2481D6AF2412715600B3487E /* TabBarViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2481D6AC24126ECA00B3487E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2481D6AD24126ED800B3487E /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2481D6BD24127FF400B3487E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2481D6BE2412800B00B3487E /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		5CCEA62C4943D14C4D116D24 /* Pods */ = {
@@ -194,6 +291,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2431904E2412B69200F20D2C /* AlophotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 243190562412B69200F20D2C /* Build configuration list for PBXNativeTarget "AlophotoUITests" */;
+			buildPhases = (
+				2431904B2412B69200F20D2C /* Sources */,
+				2431904C2412B69200F20D2C /* Frameworks */,
+				2431904D2412B69200F20D2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				243190552412B69200F20D2C /* PBXTargetDependency */,
+			);
+			name = AlophotoUITests;
+			productName = AlophotoUITests;
+			productReference = 2431904F2412B69200F20D2C /* AlophotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		2481D66A2412215300B3487E /* Alophoto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2481D67F2412215800B3487E /* Build configuration list for PBXNativeTarget "Alophoto" */;
@@ -223,6 +338,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = rasyadh;
 				TargetAttributes = {
+					2431904E2412B69200F20D2C = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 2481D66A2412215300B3487E;
+					};
 					2481D66A2412215300B3487E = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -242,18 +361,32 @@
 			projectRoot = "";
 			targets = (
 				2481D66A2412215300B3487E /* Alophoto */,
+				2431904E2412B69200F20D2C /* AlophotoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2431904D2412B69200F20D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2431905B2412B73300F20D2C /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2481D6692412215300B3487E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2481D67B2412215800B3487E /* LaunchScreen.storyboard in Resources */,
+				2481D6C32412864900B3487E /* EmptyTableViewCell.xib in Resources */,
 				2481D68C2412630D00B3487E /* Localizable.strings in Resources */,
+				2481D6A924126E7400B3487E /* Auth.storyboard in Resources */,
+				2481D6B324127D3A00B3487E /* Home.storyboard in Resources */,
 				2481D6782412215800B3487E /* Assets.xcassets in Resources */,
+				2481D6C72412872000B3487E /* PhotoCardTableViewCell.xib in Resources */,
+				2481D6B824127D4800B3487E /* Profile.storyboard in Resources */,
 				2481D6762412215300B3487E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,28 +436,53 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2431904B2412B69200F20D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2431905C2412BBEA00F20D2C /* Localify.swift in Sources */,
+				243190522412B69200F20D2C /* AlophotoUITests.swift in Sources */,
+				2431905A2412B71300F20D2C /* XCUIApplication+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2481D6672412215300B3487E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2481D6AE24126ED800B3487E /* LoginViewController.swift in Sources */,
 				2481D6A22412662600B3487E /* Storify.swift in Sources */,
 				2481D69A2412655700B3487E /* UIViewController+Extension.swift in Sources */,
+				2481D6BF2412800B00B3487E /* HomeViewController.swift in Sources */,
+				2481D6C924128AD400B3487E /* Photo.swift in Sources */,
 				2481D6A42412663D00B3487E /* Apify.swift in Sources */,
 				2481D6922412649600B3487E /* String+Extension.swift in Sources */,
+				2481D6BC24127F1F00B3487E /* UITextField+Extension.swift in Sources */,
 				2481D6982412653100B3487E /* UIView+Extension.swift in Sources */,
-				2481D6732412215300B3487E /* ViewController.swift in Sources */,
 				2481D6A62412689800B3487E /* ManagerViewController.swift in Sources */,
 				2481D69C2412657D00B3487E /* Alertify.swift in Sources */,
 				2481D6902412640100B3487E /* Formatter+Extension.swift in Sources */,
+				2481D6C22412864900B3487E /* EmptyTableViewCell.swift in Sources */,
 				2481D66F2412215300B3487E /* AppDelegate.swift in Sources */,
+				2481D6C62412872000B3487E /* PhotoCardTableViewCell.swift in Sources */,
 				2481D694241264CE00B3487E /* UIColor+Extension.swift in Sources */,
 				2481D6A02412660F00B3487E /* Notify.swift in Sources */,
 				2481D69E241265FA00B3487E /* Localify.swift in Sources */,
+				2431904A2412AB5600F20D2C /* ProfileViewController.swift in Sources */,
+				2481D6B02412715600B3487E /* TabBarViewController.swift in Sources */,
 				2481D6962412650C00B3487E /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		243190552412B69200F20D2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2481D66A2412215300B3487E /* Alophoto */;
+			targetProxy = 243190542412B69200F20D2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2481D6742412215300B3487E /* Main.storyboard */ = {
@@ -351,9 +509,71 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		2481D6AB24126E7400B3487E /* Auth.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2481D6AA24126E7400B3487E /* Base */,
+			);
+			name = Auth.storyboard;
+			sourceTree = "<group>";
+		};
+		2481D6B524127D3A00B3487E /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2481D6B424127D3A00B3487E /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		2481D6BA24127D4800B3487E /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2481D6B924127D4800B3487E /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		243190572412B69200F20D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSQS33Z9P9;
+				INFOPLIST_FILE = AlophotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rasyadh.AlophotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alophoto;
+			};
+			name = Debug;
+		};
+		243190582412B69200F20D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSQS33Z9P9;
+				INFOPLIST_FILE = AlophotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.rasyadh.AlophotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alophoto;
+			};
+			name = Release;
+		};
 		2481D67D2412215800B3487E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -511,6 +731,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		243190562412B69200F20D2C /* Build configuration list for PBXNativeTarget "AlophotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				243190572412B69200F20D2C /* Debug */,
+				243190582412B69200F20D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2481D6662412215300B3487E /* Build configuration list for PBXProject "Alophoto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
